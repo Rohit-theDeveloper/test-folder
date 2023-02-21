@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Digital watch</title>
+        <style>
+            div{
+                background-color: rgba(64, 71, 77, 0.199);
+                height: 300px;
+                width: calc(100% - 30%);
+                font-size: 80px;
+                font-weight: bold;
+                font-family: digit;
+                margin-top: 100px;
+                margin-left: 15%;
+                margin-right: 15%;
+                padding: 100px 20px 10px 10px;
+                box-sizing: border-box;
+                border: 5px solid red;
+                box-shadow: 20px 20px 10px black;
+                text-align: center;
+                color: white; 
+
+            }
+          h1{
+            color: aqua;
+            font-size: 80px;
+          }
+        </style>
+         <script  type="text/javascript"  src="js/a.js">
+
+         </script>  
+         
+
+    </head>
+    <body bgcolor="darkblue">
+        <h1 align="center">Digital Watch!</h1>
+       <div>
+        <span id="disp">abc</span>
+    </div>
+         
+          
+    </body>
+    </html>
+    <script>
+//        function today(){
+//     h = new Date().getHours();
+//     m = new Date().getMinutes();
+//     s = new Date().getSeconds();
+//     document.getElementById("disp").innerText = h + ":" + m + ":" + s;
+// }
+setInterval(today,1000)
+
+      

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+        <head>
+            <title>move div on click</title>
+            <style>
+                #ball{
+                    height: 100px;
+                    width: 100px;
+                    background-color: green;
+                    border-radius: 100px;
+                    position: relative;
+                    margin: 0px auto;
+                }
+                #button{
+                    position:relative;
+                    bottom: -350px;
+                    margin-left: 500px;
+                    padding: 15px;
+                   
+                   
+                }
+                #col1{
+                  background-color: red;
+                }
+                #col2{
+                  background-color: green;
+                }
+                #col3{
+                  background-color:blue;
+                
+                }
+                #col4{
+                  background-color:whitesmoke;
+                }
+
+            </style>
+
+        </head>
+        <body>
+          <div id="ball"></div>
+          <div id="button">
+            <button id="col1">Left</button>
+            <button id="col2">Right</button>
+            <button id="col3">Up</button>
+            <button id="col4">Down</button>
+          </div>
+          <script>
+           ltr=0;
+           utd=0;
+          btn = document.querySelectorAll('button');
+          ball= document.getElementById('ball');
+          btn[0].addEventListener('click',() =>{
+            ball.style.background='red'
+            ltr-= 5;
+            ball.style.left=ltr +"px";
+           
+          })    
+          btn[1].addEventListener('click',() =>{
+            ball.style.background='green'
+           ltr+= 5;
+             ball.style.left=ltr +"px";
+            
+           })   
+           btn[2].addEventListener('click',() =>{
+            ball.style.background='blue'
+            utd-= 5;
+             ball.style.top=utd +"px";
+            
+           })     
+           btn[3].addEventListener('click',() =>{
+           ball.style.background='whitesmoke'
+            utd+=5;
+             ball.style.top=utd +"px";
+            
+           })        
+          </script>
+          
+        </body>
+</html>

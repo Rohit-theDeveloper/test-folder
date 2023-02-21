@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example of object....</title>
+    </head>
+<body> 
+    <h3>Example of object</h3><br>
+    <script>
+        // creating object by using object literal....
+       person={
+        firstname:"Rohit",
+        secondname:"kumar",
+        age: 20,
+
+       }
+       document.writeln("<h3> creating object by using object literal </h3> <hr>")
+       document.writeln(" Object Details of person object : =")
+       document.writeln(person.firstname+ " "+ person.secondname+" "+person.age)
+   
+   
+   
+       //    creating instance of object using new keyword....
+    emp = new Object();
+     emp.id=1;
+     emp.name="raja kumar";
+     emp.salary=30000;
+     document.writeln(" <br><h3>creating instance of object using new keyword....</h3> <hr>")
+    //  printing value using loop...\
+    document.writeln("<h5> printing value using loop...</h5>")
+    document.writeln("Object details of emp object :")
+    for(value in emp){
+        document.writeln(emp[value]+" ");
+    }
+    // print value normally...
+    document.writeln("<h5> print value normally...</h5>")
+    document.writeln("Object details of emp object :")
+    document.writeln(emp.id+" "+emp.name+" "+emp.salary)
+    
+
+   
+    //crrating object by using an object cunstructor....
+    function employee(id, name,salary ){
+        this.id=id;
+        this.name=name;
+        this.salary=salary;
+    }  
+    e = new employee(101, "Sumit kumar", 40000)
+    document.writeln("<h3>creating object by using an object cunstrctor......</h3> <hr>")
+    // printing value using normaaly......
+    document.writeln("<h5>Printing value normally..</h5>")
+    document.writeln("object details of cunstructor object :")
+    document.writeln(e.id+" "+ e.name+" "+ e.salary)
+    // printing value using loop............
+    document.writeln("<h5>Printing value using loop</h5>")
+    document.writeln("object details of cunstructor object :")
+ for(value in e){
+    document.writeln(e[value])
+ }
+    </script>
+</body>
+</html>

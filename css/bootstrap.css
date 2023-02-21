@@ -1,0 +1,35 @@
+#header{
+    background-color: black;
+    height: auto;
+    padding: 10px;
+    color: aqua;
+    margin: 10px;
+}
+.nav-link{
+    color: aliceblue;
+}
+#slider{
+    margin: 10px;
+}
+.carousel-inner{
+    height: 400px;
+}
+.green{
+    color: green;
+    font-size: 30px;
+}
+.soft{
+    color: blueviolet;
+    font-size: 30px;
+}
+.card-body{
+    text-align: justify;
+    line-height: 25px;
+    font-style: italic;
+    font-size: 20px;
+    word-spacing: 3px;
+
+}
+#footer{
+    float: left;
+}

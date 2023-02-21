@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>'
+    <head>
+        <title>Example of object method </title>
+    </head>
+<body>
+    <h3>Example of defining method in javascript object </h3>
+    <p style="color:red"><span style="color:green ;font-size: 30px; font-weight:bold;">&rarr;</span>We can define method in javascript object but before define method we must add properties in function 
+       with same name as method....
+    </p>
+    <script>
+        function employee(id, name, department,salary){
+            this.id=id;
+            this.name=name;
+            this.department=department;
+            this.salary=salary;
+// Update data with help of method ......
+            this.update=update;
+              function update(othersalary,otherdepartment){
+                this.salary=othersalary;
+                this.department=otherdepartment;
+              }
+            }
+        e = new employee(102,"rakesh singh", "machenical",30000)
+        document.writeln("Details of employee object before updation:")
+        document.writeln(e.id+"  " + e.name +"  "+ e.department +"  "+ e.salary)
+        e.update(60000,"ITSECTOR");
+        document.writeln("<h4>INFORMATION updated:</h4>");
+        document.writeln("<br>Details of employee object salary after updation:")
+        document.writeln(e.id+"  " + e.name +"  "+ e.department +"  "+ e.salary)
+
+    </script>
+
+</body>
+</html>
